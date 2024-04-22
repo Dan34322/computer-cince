@@ -1,0 +1,18 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+a0 = float(input("Введите a0: "))
+a1 = float(input("Введите a1: "))
+a2 = float(input("Введите a2: "))
+a3 = float(input("Введите a3: "))
+a4 = float(input("Введите a4: "))
+
+# функция
+y = lambda x: a0+a1*x+a2*x**2+a3*x**3+a4*x**4
+print("y:", y)
+
+# создаѐм область, в которой будет
+# - отображаться график
+x = np.linspace(-5, 5, 42)
+print(' x y(x)')
+for temp in x :
